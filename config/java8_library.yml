@@ -1,0 +1,4 @@
+import:
+  - java8.yml
+  - maven_snapshots_from_develop.yml
+  - maven_releases_from_tags.yml
