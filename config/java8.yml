@@ -1,7 +1,7 @@
 import:
-  - java_base.yml
-  - java_linux_arm64.yml
-  - java_windows_amd64.yml
+  - config/java_base.yml
+  - config/java_linux_arm64.yml
+  - config/java_windows_amd64.yml
 
 jobs:
   include:
