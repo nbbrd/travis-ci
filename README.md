@@ -11,5 +11,5 @@ Example:
 ```yml
 version: ~> 1.0
 import:
-  - nbbrd/travis-ci:config/java8_library_with_binaries.yml@main
+  - nbbrd/travis-ci:config/java8_library.yml@main
 ```
