@@ -8,6 +8,6 @@ _java_windows_amd64: &_java_windows_amd64
     - eval $(powershell -NonInteractive -Command 'write("export PATH=`"" + ([Environment]::GetEnvironmentVariable("PATH","Machine") + ";" + [Environment]::GetEnvironmentVariable("PATH","User")).replace("\","/").replace("C:","/c").replace(";",":") + ":`$PATH`"")')
     - eval $(powershell -NonInteractive -Command 'write("export M2_HOME=`"" + ([Environment]::GetEnvironmentVariable("M2_HOME","Machine")).replace("\","/").replace("C:","/c").replace(";",":") + "`"")')
     - export PATH=${M2_HOME}/bin:${PATH}
-  script:
     - mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
+  script:
     - mvn test -B
